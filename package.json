@@ -1,0 +1,7 @@
+{
+  "name": "sawala-learning-project",
+  "version": "1.0.0",
+  "description": "Progres belajar JavaScript, TypeScript, Node.js, React, hingga Next.js + Strapi",
+  "type": "module",
+  "private": true
+}
