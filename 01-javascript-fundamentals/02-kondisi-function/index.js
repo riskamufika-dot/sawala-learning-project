@@ -1,10 +1,3 @@
-// =========================================
-// LATIHAN: Kondisi (if/else) & Function (SOLUSI)
-// MINI EXERCISE: Kalkulator Sederhana
-// =========================================
-
-// --- BAGIAN 1: Latihan kondisi dasar ---
-
 function cekKelulusan(nilai) {
   if (nilai >= 70) {
     return "Lulus";
@@ -13,8 +6,8 @@ function cekKelulusan(nilai) {
   }
 }
 
-console.log(cekKelulusan(80)); // "Lulus"
-console.log(cekKelulusan(50)); // "Tidak lulus"
+console.log(cekKelulusan(80));
+console.log(cekKelulusan(50));
 
 function nilaiHuruf(nilai) {
   if (nilai >= 80) {
@@ -26,12 +19,12 @@ function nilaiHuruf(nilai) {
   }
 }
 
-console.log(nilaiHuruf(85)); // "A"
-console.log(nilaiHuruf(65)); // "B"
-console.log(nilaiHuruf(40)); // "C"
+console.log(nilaiHuruf(85));
+console.log(nilaiHuruf(65));
+console.log(nilaiHuruf(40));
 
 
-// --- BAGIAN 2: Mini Exercise - Kalkulator Sederhana ---
+
 
 function tambah(a, b) {
   return a + b;
@@ -46,7 +39,7 @@ function kali(a, b) {
 }
 
 function bagi(a, b) {
-  // cek dulu SEBELUM membagi, supaya tidak error/Infinity
+
   if (b === 0) {
     return "Tidak bisa dibagi nol";
   }
@@ -67,9 +60,9 @@ function kalkulator(a, b, operator) {
   }
 }
 
-console.log(kalkulator(10, 5, "+")); // 15
-console.log(kalkulator(10, 5, "-")); // 5
-console.log(kalkulator(10, 5, "*")); // 50
-console.log(kalkulator(10, 5, "/")); // 2
-console.log(kalkulator(10, 0, "/")); // "Tidak bisa dibagi nol"
-console.log(kalkulator(10, 5, "%")); // "Operator tidak valid"
+console.log(kalkulator(10, 5, "+"));
+console.log(kalkulator(10, 5, "-"));
+console.log(kalkulator(10, 5, "*"));
+console.log(kalkulator(10, 5, "/"));
+console.log(kalkulator(10, 0, "/"));
+console.log(kalkulator(10, 5, "%")); 

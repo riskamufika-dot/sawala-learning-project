@@ -1,6 +1,3 @@
-// Data dummy produk - JANGAN diubah strukturnya
-// Export sebagai export biasa (bukan default)
-
 export const daftarProduk = [
   { id: 1, nama: "Laptop Asus", kategori: "Elektronik", harga: 8000000 },
   { id: 2, nama: "Mouse Wireless", kategori: "Elektronik", harga: 150000 },
