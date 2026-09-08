@@ -5,6 +5,6 @@ export const daftarProduk = [
   { id: 4, nama: "Sepatu Sneakers", kategori: "Fashion", harga: 450000 },
   { id: 5, nama: "Novel Fiksi", kategori: "Buku", harga: 95000 },
   { id: 6, nama: "Keyboard Mekanik", kategori: "Elektronik", harga: 650000 },
-  { id: 7, nama: "Buku Resep Masakan", kategori: "Buku", harga: 60000 },
+  { id: 7, nama: "Sandal kondangan", kategori: "Sandal", harga: 60000 },
   { id: 8, nama: "Jaket Hoodie", kategori: "Fashion", harga: 250000 },
 ];
