@@ -15,10 +15,10 @@ console.log("Sudah menikah:", sudahMenikah);
 console.log("Anak ke:", anakKe);
 console.log("Status pekerjaan:", statusPekerjaan);
 
-let angkaA = "10";
-let angkaB = "5";
-console.log("Hasil + tanpa konversi:", angkaA + angkaB);
+let angka1 = "10";
+let angka2 = "5";
+console.log("Hasil + tanpa konversi:", angka1 + angka2);
 
-console.log("Hasil + setelah dikonversi:", Number(angkaA) + Number(angkaB));
+console.log("Hasil + setelah dikonversi:", Number(angka1) + Number(angka2));
 
 console.log("typeof null:", typeof anakKe);
