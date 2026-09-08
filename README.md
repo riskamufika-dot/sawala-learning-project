@@ -28,7 +28,7 @@ Sebagian besar file di minggu 1-2 adalah file JavaScript murni yang bisa
 dijalankan langsung dengan Node.js:
 
 ```bash
-node 01-javascript-fundamentals/01-variabel-tipe-data/index.js
+node 01-javascript-fundamentals/01-variabel-tipe-data/index.js node 01-javascript-fundamentals/02-kondisi-function/index.js node 01-javascript-fundamentals/03-object-array/index.js node 01-javascript-fundamentals/04-looping-array-methods/index.js node 01-javascript-fundamentals/05-destructuring-spread/index.js node 01-javascript-fundamentals/06-es-modules/index.js node 01-javascript-fundamentals/mini-project-produk-list/index.js
 ```
 
 Untuk folder `06-es-modules` dan `mini-project-produk-list` yang memakai
