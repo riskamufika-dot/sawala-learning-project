@@ -8,3 +8,4 @@ export const daftarProduk = [
   { id: 7, nama: "Sandal kondangan", kategori: "Sandal", harga: 60000 },
   { id: 8, nama: "Jaket Hoodie", kategori: "Fashion", harga: 250000 },
 ];
+//komentar
