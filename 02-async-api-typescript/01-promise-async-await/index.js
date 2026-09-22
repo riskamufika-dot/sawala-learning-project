@@ -3,7 +3,7 @@
 function cekUmur(umur) {
   return new Promise(function (resolve, reject) {
     if (umur >= 17) {
-      resolve("Boleh masuk");
+      resolve("Umur Sudah Sesuai Syarat, Boleh masuk");
     } else {
       reject("Belum cukup umur");
     }
