@@ -32,3 +32,33 @@ console.log("Total nilai:", totalNilai);
 
 const rataRata = totalNilai / daftarSiswa.length;
 console.log("Rata-rata nilai:", rataRata);
+
+
+const datasiswa = [
+  {
+    name: "yaser",
+    age: 23
+  },
+
+  {
+    name: "rayhan",
+    age: 24
+  },
+
+  {
+    name: "albi",
+    age: 25
+  },
+
+  {
+    name: "rangga",
+    age: 26
+  },
+
+  {
+    name: "yaser",
+    age: 23
+  },
+];
+const datasiswadiatas = datasiswa.filter((datasiswa) => datasiswa.age > 23);
+console.log(datasiswadiatas);
