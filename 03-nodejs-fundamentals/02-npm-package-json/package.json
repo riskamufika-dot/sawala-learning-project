@@ -1,0 +1,16 @@
+{
+  "name": "02-npm-package-json",
+  "version": "1.0.0",
+  "description": "Latihan memahami npm dan package.json",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "sapa": "node index.js --sapa"
+  },
+  "keywords": ["latihan", "npm", "package-json"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}
