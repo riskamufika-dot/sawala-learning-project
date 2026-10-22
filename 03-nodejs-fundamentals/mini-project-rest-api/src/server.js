@@ -1,47 +1,23 @@
-// =========================================
-// Server: Entry Point
-// =========================================
-// File ini adalah "pintu masuk utama" aplikasi - di sinilah Express
-// di-setup, middleware dipasang, dan route dihubungkan, baru server
-// benar-benar dinyalakan.
+// src/server.js
+const express = require('express');
+const dotenv = require('dotenv');
+const loggerMiddleware = require('./middlewares/logger.middleware');
+const articleRoutes = require('./routes/articles.route');
 
-require("dotenv").config(); // membaca file .env, isinya dimasukkan ke process.env
-
-const express = require("express");
-const loggerMiddleware = require("./middlewares/logger.middleware");
-const articlesRoute = require("./routes/articles.route");
+dotenv.config();
 
 const app = express();
+const PORT = process.env.PORT || 5000;
 
-// PORT diambil dari environment variable (.env), dengan nilai cadangan
-// 3000 kalau variabel PORT tidak ditemukan di .env
-const PORT = process.env.PORT || 3000;
+app.use(express.json());
+app.use(loggerMiddleware);
 
-// --- Middleware global (dijalankan untuk SEMUA request) ---
-app.use(express.json()); // supaya Express bisa membaca body request berformat JSON
-app.use(loggerMiddleware); // logger custom yang kita buat tadi
+app.use('/api/articles', articleRoutes);
 
-// --- Routes ---
-// Semua request yang alamatnya diawali "/articles" akan diarahkan
-// ke articlesRoute (lihat src/routes/articles.route.js)
-app.use("/articles", articlesRoute);
-
-// Route dasar, buat ngecek server hidup atau tidak
-app.get("/", function (req, res) {
-  res.json({
-    message: "Mini Project REST API - Articles",
-    status: "Server berjalan normal",
-  });
+app.get('/', (req, res) => {
+  res.send('Server REST API Artikel berjalan.');
 });
 
-// Middleware ini dijalankan kalau TIDAK ADA route yang cocok sama sekali
-app.use(function (req, res) {
-  res.status(404).json({
-    success: false,
-    message: "Endpoint tidak ditemukan",
-  });
-});
-
-app.listen(PORT, function () {
-  console.log(`Server berjalan di http://localhost:${PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server aktif di http://localhost:${PORT}`);
 });

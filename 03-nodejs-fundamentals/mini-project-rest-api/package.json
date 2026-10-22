@@ -1,7 +1,7 @@
 {
   "name": "mini-project-rest-api",
   "version": "1.0.0",
-  "description": "Mini project REST API sederhana (CRUD artikel) menggunakan Express",
+  "description": "Mini project REST API CRUD data artikel",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
@@ -12,6 +12,6 @@
     "express": "^4.19.2"
   },
   "devDependencies": {
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.0"
   }
 }
